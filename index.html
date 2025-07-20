@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Primary SEO -->
+<meta name="title" content="Tic-Tac-Toe Web Game – Prodigy InfoTech Task 3">
+<meta name="description" content="Play a modern Tic-Tac-Toe game with Human vs Human and Human vs AI modes. Track scores, reset rounds, and enjoy an interactive experience built with HTML, CSS, and JavaScript.">
+<meta name="keywords" content="tic tac toe, web game, JavaScript tic-tac-toe, responsive game, HTML CSS JS project, Prodigy InfoTech, internship task">
+<meta name="author" content="Jamuna Rani">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jamuna1221.github.io/tic-tac-toe/">
+<meta property="og:title" content="Tic-Tac-Toe Web Game – Prodigy InfoTech Task 3">
+<meta property="og:description" content="Challenge a friend or AI in this sleek web-based Tic-Tac-Toe game. Built with HTML, CSS & JS.">
+<meta property="og:image" content="https://jamuna1221.github.io/tic-tac-toe/assets/og-image.png">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://jamuan1221.github.io/tic-tac-toe/">
+<meta name="twitter:title" content="Tic-Tac-Toe Web Game – Prodigy InfoTech Task 3">
+<meta name="twitter:description" content="Fun, responsive Tic-Tac-Toe with Human vs AI mode. Play online instantly!">
+<meta name="twitter:image" content="https://jamuna1221.github.io/tic-tac-toe/assets/og-image.png">
+
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+        
+        <div class="game-info">
+            <div class="player-turn">
+                <span id="current-player">Player X's Turn</span>
+            </div>
+            <div class="score">
+                <span>X: <span id="score-x">0</span></span>
+                <span>O: <span id="score-o">0</span></span>
+                <span>Draws: <span id="score-draw">0</span></span>
+            </div>
+        </div>
+
+        <div class="game-board" id="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div class="game-controls">
+            <button id="reset-game" class="btn">Reset Game</button>
+            <button id="reset-scores" class="btn">Reset Scores</button>
+        </div>
+
+        <div class="game-mode">
+            <h3>Game Mode</h3>
+            <label>
+                <input type="radio" name="game-mode" value="human" checked>
+                Human vs Human
+            </label>
+            <label>
+                <input type="radio" name="game-mode" value="ai">
+                Human vs AI
+            </label>
+        </div>
+
+        <div class="winner-message" id="winner-message">
+            <div class="message-content">
+                <h2 id="winner-text"></h2>
+                <button id="play-again" class="btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
